@@ -35,6 +35,12 @@
           "name": "Gözleme (Peynirli / Patatesli / Kıymalı)",
           "description": "Odun ateşinde ince hamur",
           "price": 165
+        },
+        {
+          "id": 106,
+          "name": "Poğaça",
+          "description": "",
+          "price": 10
         }
       ]
     },
