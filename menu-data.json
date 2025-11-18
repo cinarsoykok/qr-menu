@@ -3,38 +3,410 @@
   "currency": "₺",
   "categories": [
     {
-      "id": "sicak-icecekler",
-      "name": "Sıcak İçecekler",
+      "id": "kahvalti",
+      "name": "Kahvaltı",
       "items": [
         {
-          "id": 1,
-          "name": "Çay",
-          "description": "Demleme ince belli",
-          "price": 15
+          "id": 101,
+          "name": "Serpme Kahvaltı (2 Kişilik)",
+          "description": "Beyaz peynir, kaşar, zeytin, bal-kaymak, reçel, yumurta, sigara böreği, domates-salatalık, sınırsız çay",
+          "price": 420
         },
         {
-          "id": 2,
-          "name": "Türk Kahvesi",
-          "description": "Orta kavrulmuş",
-          "price": 35
+          "id": 102,
+          "name": "Klasik Kahvaltı Tabağı",
+          "description": "Peynir, zeytin, yumurta, domates-salatalık, bal, tereyağı, çay",
+          "price": 210
+        },
+        {
+          "id": 103,
+          "name": "Menemen",
+          "description": "Domates, biber ve yumurta ile, isteğe göre sucuklu",
+          "price": 180
+        },
+        {
+          "id": 104,
+          "name": "Sucuklu Yumurta",
+          "description": "Tavada dana sucuk ve iki adet yumurta",
+          "price": 190
+        },
+        {
+          "id": 105,
+          "name": "Gözleme (Peynirli / Patatesli / Kıymalı)",
+          "description": "Odun ateşinde ince hamur",
+          "price": 165
         }
       ]
     },
     {
-      "id": "ana-yemekler",
-      "name": "Ana Yemekler",
+      "id": "baslangic",
+      "name": "Başlangıçlar",
       "items": [
         {
-          "id": 3,
-          "name": "Tavuk Izgara",
-          "description": "Pilav ve salata ile",
-          "price": 140
+          "id": 201,
+          "name": "Günün Çorbası",
+          "description": "Garsonunuza sorunuz",
+          "price": 95
         },
         {
-          "id": 4,
-          "name": "Köfte Porsiyon",
-          "description": "8 adet ızgara köfte",
+          "id": 202,
+          "name": "Mercimek Çorbası",
+          "description": "Klasik terbiyeli mercimek",
+          "price": 95
+        },
+        {
+          "id": 203,
+          "name": "Sigara Böreği",
+          "description": "6 adet beyaz peynirli",
+          "price": 145
+        },
+        {
+          "id": 204,
+          "name": "Paçanga Böreği",
+          "description": "Pastırmalı kaşarlı, 3 adet",
+          "price": 180
+        },
+        {
+          "id": 205,
+          "name": "Humus",
+          "description": "Nohut, tahin ve limon ile meze",
+          "price": 130
+        },
+        {
+          "id": 206,
+          "name": "Haydari",
+          "description": "Yoğurtlu sarımsaklı meze",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": "salata",
+      "name": "Salatalar",
+      "items": [
+        {
+          "id": 301,
+          "name": "Mevsim Salata",
+          "description": "Zeytinyağlı karışık yeşillik",
+          "price": 135
+        },
+        {
+          "id": 302,
+          "name": "Çoban Salata",
+          "description": "Domates, salatalık, biber, soğan, maydanoz",
+          "price": 135
+        },
+        {
+          "id": 303,
+          "name": "Akdeniz Salata",
+          "description": "Karışık yeşillik, beyaz peynir, mısır, zeytin",
+          "price": 165
+        },
+        {
+          "id": 304,
+          "name": "Tavuklu Sezar Salata",
+          "description": "Izgara tavuk, kruton, parmesan, sezar sos",
+          "price": 220
+        }
+      ]
+    },
+    {
+      "id": "pide",
+      "name": "Pide & Lahmacun",
+      "items": [
+        {
+          "id": 401,
+          "name": "Kıymalı Pide",
+          "description": "Taş fırında, ince hamur",
+          "price": 230
+        },
+        {
+          "id": 402,
+          "name": "Kaşarlı Pide",
+          "description": "Bol kaşarlı",
+          "price": 215
+        },
+        {
+          "id": 403,
+          "name": "Karışık Pide",
+          "description": "Sucuk, kaşar, kıyma, mantar",
+          "price": 260
+        },
+        {
+          "id": 404,
+          "name": "Kuşbaşılı Pide",
+          "description": "Dana kuşbaşı ve biber",
+          "price": 260
+        },
+        {
+          "id": 405,
+          "name": "Lahmacun",
+          "description": "Maydanoz ve limon ile",
+          "price": 95
+        },
+        {
+          "id": 406,
+          "name": "Acılı Lahmacun",
+          "description": "Acı sevenlere özel",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "id": "izgara",
+      "name": "Izgaralar & Kebaplar",
+      "items": [
+        {
+          "id": 501,
+          "name": "Adana Kebap",
+          "description": "Acılı dana-kuzu kıyma, pilav ve salata ile",
+          "price": 310
+        },
+        {
+          "id": 502,
+          "name": "Urfa Kebap",
+          "description": "Az acılı dana-kuzu kıyma, pilav ve salata ile",
+          "price": 310
+        },
+        {
+          "id": 503,
+          "name": "Tavuk Şiş",
+          "description": "Marine tavuk şiş, pilav ve salata ile",
+          "price": 275
+        },
+        {
+          "id": 504,
+          "name": "Köfte Izgara",
+          "description": "8 adet dana köfte, pilav ve salata ile",
+          "price": 280
+        },
+        {
+          "id": 505,
+          "name": "Karışık Izgara (2 Kişilik)",
+          "description": "Adana, tavuk şiş, köfte, kanat, pirzola",
+          "price": 620
+        }
+      ]
+    },
+    {
+      "id": "burger",
+      "name": "Burger & Sandviç",
+      "items": [
+        {
+          "id": 601,
+          "name": "Klasik Burger",
+          "description": "150 gr dana köfte, cheddar, patates kızartması ile",
+          "price": 260
+        },
+        {
+          "id": 602,
+          "name": "Cheeseburger",
+          "description": "Çift cheddar peynirli burger",
+          "price": 275
+        },
+        {
+          "id": 603,
+          "name": "BBQ Burger",
+          "description": "Karamelize soğan ve BBQ sos ile",
+          "price": 285
+        },
+        {
+          "id": 604,
+          "name": "Tavuk Burger",
+          "description": "Pane tavuk göğüs, marul ve özel sos",
+          "price": 240
+        },
+        {
+          "id": 605,
+          "name": "Kulüp Sandviç",
+          "description": "Tost ekmeğinde tavuk, peynir, domates, marul",
+          "price": 235
+        }
+      ]
+    },
+    {
+      "id": "makarna",
+      "name": "Makarna & Dünya Mutfağı",
+      "items": [
+        {
+          "id": 701,
+          "name": "Penne Arabiatta",
+          "description": "Acılı domates soslu penne",
+          "price": 230
+        },
+        {
+          "id": 702,
+          "name": "Fettuccine Alfredo",
+          "description": "Kremalı mantarlı, tavuklu isteğe bağlı",
+          "price": 260
+        },
+        {
+          "id": 703,
+          "name": "Spagetti Bolonez",
+          "description": "Kıymalı domates soslu spagetti",
+          "price": 255
+        },
+        {
+          "id": 704,
+          "name": "Tavuklu Noodle",
+          "description": "Sebzeli soya soslu noodle",
+          "price": 260
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "items": [
+        {
+          "id": 801,
+          "name": "Margherita Pizza",
+          "description": "Mozzarella ve fesleğen",
+          "price": 250
+        },
+        {
+          "id": 802,
+          "name": "Karışık Pizza",
+          "description": "Sucuk, sosis, mısır, zeytin, mantar",
+          "price": 280
+        },
+        {
+          "id": 803,
+          "name": "Dört Peynirli Pizza",
+          "description": "Mozzarella, rokfor, kaşar, parmesan",
+          "price": 295
+        },
+        {
+          "id": 804,
+          "name": "Vegetarian Pizza",
+          "description": "Mantar, biber, mısır, zeytin, domates",
+          "price": 270
+        }
+      ]
+    },
+    {
+      "id": "tatli",
+      "name": "Tatlılar",
+      "items": [
+        {
+          "id": 901,
+          "name": "Sütlaç",
+          "description": "Fırınlanmış geleneksel sütlaç",
+          "price": 120
+        },
+        {
+          "id": 902,
+          "name": "Trileçe",
+          "description": "Karamelli trileçe dilimi",
+          "price": 135
+        },
+        {
+          "id": 903,
+          "name": "Çikolatalı Sufle",
+          "description": "Akışkan çikolatalı, dondurma ile",
+          "price": 155
+        },
+        {
+          "id": 904,
+          "name": "Baklava (4 Dilim)",
+          "description": "Cevizli baklava",
           "price": 160
+        },
+        {
+          "id": 905,
+          "name": "Dondurma (3 Top)",
+          "description": "Çeşit sorunuz",
+          "price": 110
+        }
+      ]
+    },
+    {
+      "id": "sicak-icecek",
+      "name": "Sıcak İçecekler",
+      "items": [
+        {
+          "id": 1001,
+          "name": "Çay",
+          "description": "İnce belli bardakta",
+          "price": 20
+        },
+        {
+          "id": 1002,
+          "name": "Türk Kahvesi",
+          "description": "Orta kavrulmuş, lokum ile",
+          "price": 55
+        },
+        {
+          "id": 1003,
+          "name": "Espresso",
+          "description": "Tek shot",
+          "price": 60
+        },
+        {
+          "id": 1004,
+          "name": "Americano",
+          "description": "",
+          "price": 70
+        },
+        {
+          "id": 1005,
+          "name": "Latte",
+          "description": "Sütlü kahve",
+          "price": 80
+        },
+        {
+          "id": 1006,
+          "name": "Cappuccino",
+          "description": "",
+          "price": 80
+        },
+        {
+          "id": 1007,
+          "name": "Sahlep (Kış Sezonu)",
+          "description": "",
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "soguk-icecek",
+      "name": "Soğuk İçecekler",
+      "items": [
+        {
+          "id": 1101,
+          "name": "Kutu Kola / Fanta / Gazoz",
+          "description": "",
+          "price": 60
+        },
+        {
+          "id": 1102,
+          "name": "Ayran",
+          "description": "Bardak ayran",
+          "price": 35
+        },
+        {
+          "id": 1103,
+          "name": "Limonata",
+          "description": "Taze sıkma",
+          "price": 70
+        },
+        {
+          "id": 1104,
+          "name": "Ice Tea (Şeftali / Limon)",
+          "description": "",
+          "price": 60
+        },
+        {
+          "id": 1105,
+          "name": "Soda",
+          "description": "",
+          "price": 35
+        },
+        {
+          "id": 1106,
+          "name": "Su (0.5 L)",
+          "description": "",
+          "price": 20
         }
       ]
     }
