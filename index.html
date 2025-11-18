@@ -7,22 +7,58 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <!-- Üst ince yazı (Canva'daki RIMBERIO RESTAURANT gibi) -->
-      <p class="header-tagline">SENİN RESTORAN ADIN</p>
-
-      <!-- Burası app.js içindeki restaurantName ile override edilecek -->
-      <h1 id="restaurant-name">MENU</h1>
-
-      <p>QR kod ile açılan dijital menü</p>
+  <div class="page">
+    <!-- ÜST ÇUBUK -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand-left">
+          <div class="brand-logo">SM</div>
+          <span class="brand-name">Senin Markan</span>
+        </div>
+        <nav class="top-nav">
+          <a href="#">Hakkımızda</a>
+          <a href="#">Menümüz</a>
+          <a href="#">Şubeler</a>
+          <a href="#">İletişim</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Kategoriler için sekmeler -->
-    <div id="category-tabs" class="category-tabs"></div>
+    <!-- HERO BANNER -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1 class="hero-title">Senin Markan</h1>
+        <p class="hero-subtitle">Her damak tadına uygun lezzetler</p>
+      </div>
+    </section>
 
-    <!-- Menü kartları buraya JS ile basılacak -->
-    <div id="menu-container"></div>
+    <!-- ANA İÇERİK -->
+    <main class="main-layout">
+      <!-- KATEGORİ KARTLARI (Happy Moon's grid gibi) -->
+      <section class="category-section">
+        <h2 class="section-title">MENÜ KATEGORİLERİ</h2>
+        <div id="category-grid" class="category-grid">
+          <!-- JS ile doldurulacak -->
+        </div>
+      </section>
+
+      <!-- SEÇİLEN KATEGORİ DETAYLARI -->
+      <section class="menu-detail-section">
+        <h2 id="detail-title" class="section-title">Kategori Detayı</h2>
+        <div id="menu-detail" class="menu-detail">
+          <!-- JS ile doldurulacak -->
+        </div>
+      </section>
+    </main>
+
+    <!-- ALT BANT -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Senin Markan</div>
+        <div>Adres: Örnek Cad. No:1 İstanbul</div>
+        <div>Rezervasyon: 0 (212) 000 00 00</div>
+      </div>
+    </footer>
   </div>
 
   <script src="app.js"></script>
