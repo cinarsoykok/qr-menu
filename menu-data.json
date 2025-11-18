@@ -1,0 +1,42 @@
+{
+  "restaurantName": "Senin Markan",
+  "currency": "₺",
+  "categories": [
+    {
+      "id": "sicak-icecekler",
+      "name": "Sıcak İçecekler",
+      "items": [
+        {
+          "id": 1,
+          "name": "Çay",
+          "description": "Demleme ince belli",
+          "price": 15
+        },
+        {
+          "id": 2,
+          "name": "Türk Kahvesi",
+          "description": "Orta kavrulmuş",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": "ana-yemekler",
+      "name": "Ana Yemekler",
+      "items": [
+        {
+          "id": 3,
+          "name": "Tavuk Izgara",
+          "description": "Pilav ve salata ile",
+          "price": 140
+        },
+        {
+          "id": 4,
+          "name": "Köfte Porsiyon",
+          "description": "8 adet ızgara köfte",
+          "price": 160
+        }
+      ]
+    }
+  ]
+}

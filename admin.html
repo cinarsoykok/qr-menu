@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menü Admin - Senin Markan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="admin-header">
+      <h1>Menü Admin</h1>
+      <a href="index.html">Menüyü Gör</a>
+    </header>
+
+    <div>
+      <label>
+        Kategori:
+        <select id="admin-category-select"></select>
+      </label>
+    </div>
+
+    <form id="admin-form" class="admin-form">
+      <input type="text" id="item-name" placeholder="Ürün adı" required />
+      <input type="text" id="item-desc" placeholder="Açıklama (opsiyonel)" />
+      <input type="number" id="item-price" placeholder="Fiyat" required />
+      <input type="number" id="item-id" placeholder="ID (otomatik olabilir)" />
+      <button type="submit" class="btn-primary">Ekle</button>
+    </form>
+
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Ad</th>
+          <th>Açıklama</th>
+          <th>Fiyat</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="admin-table-body"></tbody>
+    </table>
+
+    <div class="info-box">
+      <p>
+        Not: Bu admin panel şu anda <strong>tarayıcı üzerinde</strong> çalışıyor.  
+        Sunucuya otomatik kaydetmiyor. Düzenleme yaptıktan sonra aşağıdaki JSON’u
+        kopyalayıp <code>menu-data.json</code> dosyanı güncellemelisin.
+      </p>
+      <button id="export-json-btn" class="btn-primary">Güncel JSON'u Göster</button>
+    </div>
+
+    <pre id="export-json-output" style="margin-top: 8px; font-size: 0.75rem; white-space: pre-wrap;"></pre>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
