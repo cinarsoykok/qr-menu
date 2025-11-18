@@ -1,86 +1,113 @@
+/* Genel reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+/* Arka plan ve ana kart (Canva chalkboard stili) */
 body {
-  background: #f5f5f5;
-  color: #222;
-  padding: 16px;
+  background: #e4e4e4; /* Dış gri alan */
+  color: #f5f5f5;
+  padding: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  background: #111111; /* Tahta/siyah arka plan */
+  border-radius: 8px;
+  padding: 32px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid #333333;
 }
 
+/* HEADER – Canva tasarımına benzer */
 .header {
-  text-align: center;
-  margin-bottom: 16px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.header-tagline {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffc94c;
+  margin-bottom: 4px;
 }
 
 .header h1 {
-  font-size: 1.8rem;
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
   margin-bottom: 4px;
 }
 
 .header p {
   font-size: 0.9rem;
-  color: #777;
+  color: #f1f1f1;
+  opacity: 0.85;
 }
 
-/* Kategori butonları */
+/* KATEGORİ SEKMELERİ */
 .category-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 16px;
+  margin: 16px 0 20px;
 }
 
 .category-tab {
-  padding: 8px 12px;
+  padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid #ddd;
-  background: #fafafa;
-  font-size: 0.85rem;
+  border: 1px solid #f5f5f5;
+  background: transparent;
+  font-size: 0.8rem;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, transform 0.1s;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f5f5f5;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s, color 0.2s;
+}
+
+.category-tab:hover {
+  transform: translateY(-1px);
 }
 
 .category-tab.active {
-  background: #222;
-  color: #fff;
-  border-color: #222;
+  background: #ffc94c;
+  border-color: #ffc94c;
+  color: #111111;
 }
 
-/* Menü kartları */
+/* MENÜ KATEGORİ KUTULARI */
 .menu-category {
   margin-bottom: 24px;
+  padding: 16px 18px;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
 }
 
 .menu-category h2 {
-  font-size: 1.3rem;
-  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  border-bottom: 1px solid #f5f5f5;
   padding-bottom: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
+/* MENÜ SATIRLARI */
 .menu-item {
   display: flex;
   justify-content: space-between;
-  gap: 8px;
-  padding: 8px 0;
-  border-bottom: 1px dashed #eee;
-}
-
-.menu-item:last-child {
-  border-bottom: none;
+  gap: 12px;
+  padding: 6px 0;
 }
 
 .menu-item-info {
@@ -88,41 +115,53 @@ body {
 }
 
 .menu-item-name {
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffc94c; /* Sarı başlıklar */
   margin-bottom: 2px;
 }
 
 .menu-item-desc {
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 0.8rem;
+  color: #dddddd;
 }
 
 .menu-item-price {
-  font-weight: 600;
+  font-weight: 700;
+  color: #ffc94c;
   white-space: nowrap;
+  margin-left: 8px;
+}
+
+/* Masaüstünde 2 sütunlu görünüm – Canva’daki layout’a benzer */
+@media (min-width: 900px) {
+  #menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 24px;
+  }
 }
 
 /* Küçük ekran uyumu */
 @media (max-width: 600px) {
-  .container {
+  body {
     padding: 12px;
   }
 
+  .container {
+    padding: 20px 16px;
+  }
+
   .header h1 {
-    font-size: 1.5rem;
-  }
-
-  .menu-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-item-price {
-    margin-top: 4px;
+    font-size: 2rem;
   }
 }
 
-/* Admin sayfası için basit stiller */
+/* ---------------------- */
+/* ADMIN SAYFASI STİLLERİ */
+/* (admin.html için)      */
+/* ---------------------- */
+
 .admin-header {
   display: flex;
   align-items: center;
@@ -132,6 +171,17 @@ body {
 
 .admin-header h1 {
   font-size: 1.5rem;
+  color: #ffc94c;
+}
+
+.admin-header a {
+  color: #ffc94c;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.admin-header a:hover {
+  text-decoration: underline;
 }
 
 .admin-table {
@@ -139,17 +189,19 @@ body {
   border-collapse: collapse;
   margin-top: 12px;
   font-size: 0.9rem;
+  background: #1b1b1b;
+  color: #f5f5f5;
 }
 
 .admin-table th,
 .admin-table td {
   padding: 6px 8px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #333333;
 }
 
 .admin-table th {
   text-align: left;
-  background: #fafafa;
+  background: #222222;
 }
 
 .admin-form {
@@ -162,8 +214,14 @@ body {
 .admin-form input {
   padding: 6px 8px;
   border-radius: 6px;
-  border: 1px solid #ddd;
+  border: 1px solid #555555;
   font-size: 0.85rem;
+  background: #1b1b1b;
+  color: #f5f5f5;
+}
+
+.admin-form input::placeholder {
+  color: #aaaaaa;
 }
 
 .admin-form button {
@@ -171,20 +229,48 @@ body {
   border: none;
   padding: 6px 8px;
   cursor: pointer;
+  font-size: 0.85rem;
 }
 
+/* Butonlar */
 .btn-primary {
-  background: #222;
-  color: #fff;
+  background: #ffc94c;
+  color: #111111;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.07);
 }
 
 .btn-danger {
   background: #e53935;
-  color: #fff;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  filter: brightness(1.05);
 }
 
 .info-box {
   font-size: 0.8rem;
-  color: #555;
+  color: #dddddd;
   margin-top: 8px;
+}
+
+.info-box code {
+  background: #1b1b1b;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Export JSON çıktısı */
+#export-json-output {
+  background: #1b1b1b;
+  color: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #333333;
+  max-height: 260px;
+  overflow: auto;
 }

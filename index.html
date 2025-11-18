@@ -9,12 +9,19 @@
 <body>
   <div class="container">
     <header class="header">
-      <h1 id="restaurant-name">Menü</h1>
+      <!-- Üst ince yazı (Canva'daki RIMBERIO RESTAURANT gibi) -->
+      <p class="header-tagline">SENİN RESTORAN ADIN</p>
+
+      <!-- Burası app.js içindeki restaurantName ile override edilecek -->
+      <h1 id="restaurant-name">MENU</h1>
+
       <p>QR kod ile açılan dijital menü</p>
     </header>
 
+    <!-- Kategoriler için sekmeler -->
     <div id="category-tabs" class="category-tabs"></div>
 
+    <!-- Menü kartları buraya JS ile basılacak -->
     <div id="menu-container"></div>
   </div>
 
